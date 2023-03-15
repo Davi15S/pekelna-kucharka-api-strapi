@@ -4,7 +4,8 @@
   "info": {
     "singularName": "recipe",
     "pluralName": "recipes",
-    "displayName": "Recipe"
+    "displayName": "Recipe",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,12 +23,12 @@
       "minLength": 1
     },
     "images": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "process": {
       "type": "json",
@@ -47,7 +48,7 @@
       "required": true,
       "minLength": 1
     },
-    "ingredient": {
+    "ingredients": {
       "displayName": "ingredients",
       "type": "component",
       "repeatable": true,

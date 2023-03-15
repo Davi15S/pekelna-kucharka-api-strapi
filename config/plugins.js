@@ -1,10 +1,7 @@
 module.exports = ({ env }) => ({
   "users-permissions": {
-    enabled: true,
     config: {
-      jwt: {
-        expiresIn: "2h",
-      },
+      jwtSecret: env("JWT_SECRET"),
     },
   },
   upload: {

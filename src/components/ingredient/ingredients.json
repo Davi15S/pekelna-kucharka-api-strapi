@@ -1,7 +1,8 @@
 {
   "collectionName": "components_ingredient_ingredients",
   "info": {
-    "displayName": "ingredients"
+    "displayName": "ingredients",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,10 +11,12 @@
       "required": true,
       "minLength": 1
     },
-    "amount": {
-      "type": "integer"
-    },
     "unit": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "amount": {
       "type": "string",
       "required": true,
       "minLength": 1
