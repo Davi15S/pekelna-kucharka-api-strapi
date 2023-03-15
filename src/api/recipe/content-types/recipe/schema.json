@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "Recipe"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "minLength": 1
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "process": {
+      "type": "json",
+      "required": true
+    },
+    "recipeOrigin": {
+      "type": "json"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "recipe"
+    },
+    "category": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "ingredient": {
+      "displayName": "ingredients",
+      "type": "component",
+      "repeatable": true,
+      "component": "ingredient.ingredients"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "recipes"
+    },
+    "numberOfServings": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "spiciness": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "cookingTime": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    }
+  }
+}

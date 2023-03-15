@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ingredient_ingredients",
+  "info": {
+    "displayName": "ingredients"
+  },
+  "options": {},
+  "attributes": {
+    "ingredient": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "unit": {
+      "type": "string",
+      "required": true,
+      "minLength": 1
+    }
+  }
+}
