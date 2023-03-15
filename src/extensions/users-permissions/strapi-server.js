@@ -94,6 +94,8 @@ module.exports = (plugin) => {
           secure: false,
           signed: true,
           overwrite: true,
+          sameSite: "none",
+          secureProxy: true,
         });
         ctx.send({
           status: "Authenticated",
