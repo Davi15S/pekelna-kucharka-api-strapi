@@ -17,6 +17,11 @@
       "type": "component",
       "repeatable": true,
       "component": "ingredient.category"
+    },
+    "originOfMeals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ingredient.category"
     }
   }
 }
