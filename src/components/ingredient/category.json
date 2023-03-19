@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_ingredient_categories",
+  "info": {
+    "displayName": "Category",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "string"
+    }
+  }
+}
