@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "units",
+  "info": {
+    "singularName": "unit",
+    "pluralName": "units",
+    "displayName": "Units",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "units": {
+      "displayName": "Units",
+      "type": "component",
+      "repeatable": true,
+      "component": "ingredient.units"
+    }
+  }
+}

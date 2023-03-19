@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_ingredient_units",
+  "info": {
+    "displayName": "Units"
+  },
+  "options": {},
+  "attributes": {
+    "unit": {
+      "type": "string"
+    }
+  }
+}
