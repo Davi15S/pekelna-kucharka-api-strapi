@@ -141,7 +141,7 @@ module.exports = (plugin) => {
       name: "users-permissions",
     });
     const { refreshToken } = ctx.request.body;
-    let refreshCookie = ctx.cookies.get("refreshToken");
+    const refreshCookie = ctx.cookies.get("refreshToken");
 
     if (!refreshCookie && !refreshToken) {
       return ctx.badRequest("No Authorization");
