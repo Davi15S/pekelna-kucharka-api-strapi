@@ -69,6 +69,9 @@
     },
     "categories": {
       "type": "json"
+    },
+    "origins": {
+      "type": "json"
     }
   }
 }
