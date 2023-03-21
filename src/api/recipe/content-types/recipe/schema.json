@@ -34,19 +34,11 @@
       "type": "json",
       "required": true
     },
-    "recipeOrigin": {
-      "type": "json"
-    },
     "comments": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "recipe"
-    },
-    "category": {
-      "type": "string",
-      "required": true,
-      "minLength": 1
     },
     "ingredients": {
       "displayName": "ingredients",
@@ -74,6 +66,9 @@
       "type": "string",
       "required": true,
       "minLength": 1
+    },
+    "categories": {
+      "type": "json"
     }
   }
 }
