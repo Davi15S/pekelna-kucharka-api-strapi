@@ -62,16 +62,16 @@
       "required": true,
       "minLength": 1
     },
-    "cookingTime": {
-      "type": "string",
-      "required": true,
-      "minLength": 1
-    },
     "categories": {
       "type": "json"
     },
     "origins": {
       "type": "json"
+    },
+    "cookingTime": {
+      "type": "integer",
+      "required": true,
+      "min": 1
     }
   }
 }
